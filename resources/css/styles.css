@@ -71,7 +71,7 @@ h4 {
 
 nav {
     margin: 40px 0;
-    min-width: 400px;
+    /* min-width: 400px; */
     background-color: white;
     color: #07C3C3;
     border-color: #07C3C3;
@@ -89,7 +89,7 @@ nav a {
     font-family: serif;
     font-size: 18px;
     text-decoration: none;
-    margin: 0 12px 0 0;
+    margin: 8px 12px 0 0;
 }
 
 nav a:hover {
@@ -129,12 +129,13 @@ nav a:hover {
                 
     }
 
-
     nav {
         display: flex;
         justify-content: left;
         /* margin: 60px auto; */
         align-items: baseline;
+        flex-wrap: wrap;
+        border: 1px solid red;
 
     }
 }
@@ -173,7 +174,7 @@ nav a:hover {
 
     nav {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         margin: 40px auto;
       
     }
