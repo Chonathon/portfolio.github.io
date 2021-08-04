@@ -2,9 +2,14 @@
 /* Global */
 
 
-* {
+html {
     box-sizing: border-box;
-}
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
 
 body {
     font-size: 100%;
@@ -40,6 +45,28 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 470px) {
+    
+    .banner {
+        display: block;
+        border: 1px solid red;
+    }
+
+    .profile-pic {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .intro {
+
+        float: none;
+    }
+
+
 }
 
 .profile-pic {
@@ -263,3 +290,4 @@ h4 {
     }
 
 */
+
