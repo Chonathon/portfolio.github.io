@@ -47,27 +47,7 @@ h3 {
     align-items: center;
 }
 
-@media only screen and (max-width: 470px) {
-    
-    .banner {
-        display: block;
-        border: 1px solid red;
-    }
 
-    .profile-pic {
-        margin: 0;
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .intro {
-
-        float: none;
-    }
-
-
-}
 
 .profile-pic {
     margin: 50px 100px 0 0;
@@ -134,6 +114,51 @@ nav a:hover {
 }
 
 
+/* Breakpoint Banner */
+
+@media only screen and (max-width: 1000px) {
+    .profile-pic {
+        margin: 0;
+        flex-basis: 660px;
+        flex-shrink: 1;
+        width: auto;
+        display: inline-block;
+        float: left;
+    }
+
+     
+    .intro {
+
+        float: left;
+    }
+}
+
+
+/* Mobile Banner */
+
+@media only screen and (max-width: 470px) {
+    
+    .banner {
+        display: block;
+        margin: 10% auto;
+        border: 1px solid red;
+    }
+
+    .profile-pic {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .intro {
+
+        float: none;
+    }
+
+
+}
+
 
  /* Separator */
 
@@ -163,8 +188,6 @@ nav a:hover {
     margin-right: 3em;
   }
         
-
-
 
 
 /* Case studies */
