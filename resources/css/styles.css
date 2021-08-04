@@ -51,10 +51,14 @@ h3 {
 
 .profile-pic {
     margin: 50px 100px 0 0;
-    height: 660px;
-    width: auto;
-    display: inline-block;
-    float: left;
+    height: auto;
+    max-width: 500px;
+    /* display: inline-block; */
+    /* float: left; */
+}
+
+.profile-pic img {
+    width: 100%;
 }
 
 .intro {
@@ -62,18 +66,15 @@ h3 {
     float: left;
 }
 
+    
+
 nav {
+    margin: 40px 0;
+    min-width: 400px;
     background-color: white;
     color: #07C3C3;
     border-color: #07C3C3;
     border-width: .5px;
-    
-    
-}
-nav {
-    margin: 40px 0;
-    min-width: 400px;
- 
 }
 
 nav a {
@@ -119,17 +120,23 @@ nav a:hover {
 @media only screen and (max-width: 1000px) {
     .profile-pic {
         margin: 0;
-        flex-basis: 660px;
-        flex-shrink: 1;
-        width: auto;
-        display: inline-block;
-        float: left;
+        flex-basis: 500x;
+        flex-shrink: 2;
+        border: 1px solid red;
     }
 
      
     .intro {
 
         float: left;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        margin: 60px auto;
+        align-items: baseline;
+        border: 1px solid blue;
     }
 }
 
@@ -140,13 +147,13 @@ nav a:hover {
     
     .banner {
         display: block;
-        margin: 10% auto;
+        margin: 5% auto;
         border: 1px solid red;
     }
 
     .profile-pic {
         margin: 0;
-        width: 100%;
+        flex-basis: 500px;
         height: auto;
         display: block;
     }
@@ -156,6 +163,12 @@ nav a:hover {
         float: none;
     }
 
+    nav {
+        display: flex;
+        justify-content: center;
+        margin: 40px auto;
+        border: 1px solid red;
+    }
 
 }
 
@@ -198,7 +211,6 @@ nav a:hover {
 }
 
 .thumbnail-container {
-    box-sizing: border-box;
     width: 75%;
     min-width: 400px;
     height: auto;
@@ -245,7 +257,31 @@ nav a:hover {
 
  }
 
- #motion-x
+
+/* Breakpoint Banner */
+
+
+@media only screen and (max-width: 1000px) {
+    .thumbnail-container {
+        width: 85%;
+    }
+}
+
+/* Mobile Banner */
+
+@media only screen and (max-width: 470px) {
+
+    .thumbnail-container {
+        width: 100%;
+        min-width: none;
+        height: auto;
+        margin: 60px auto 20px auto;
+        display: block;
+        
+        
+    }
+}
+
 
  /* DUMP
 
