@@ -28,15 +28,21 @@ h1 {
 h2 {
     font-family: "Work Sans";
     font-weight: normal;
+    color: #818080;
 }
 
 h3 {
-    font-family: "Work Sans";
+    font-family: "Merriweather";
     font-weight: regular;
     color: #07C3C3;
     font-size: 30px;
 }
 
+h4 {
+    font-family: "work sans";
+    font-size: 14px;
+    text-transform: uppercase;
+}
 
 /* Hero */
 
@@ -61,11 +67,6 @@ h3 {
     width: 100%;
 }
 
-.intro {
-
-    float: left;
-}
-
     
 
 nav {
@@ -75,6 +76,7 @@ nav {
     color: #07C3C3;
     border-color: #07C3C3;
     border-width: .5px;
+    
 }
 
 nav a {
@@ -88,8 +90,6 @@ nav a {
     font-size: 18px;
     text-decoration: none;
     margin: 0 12px 0 0;
-    text-transform: capitalize;
-    
 }
 
 nav a:hover {
@@ -99,9 +99,9 @@ nav a:hover {
 
 #name {
     font-size: 48px;
-    font-family: "Work Sans";
+    font-family: "Merriweather";
     font-weight: lighter;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     color: black;
 }
 
@@ -115,40 +115,48 @@ nav a:hover {
 }
 
 
-/* Breakpoint Banner */
+/* Breakpoint < 1000px Banner */
 
 @media only screen and (max-width: 1000px) {
     .profile-pic {
         margin: 0;
-        flex-basis: 500x;
-        flex-shrink: 2;
-        border: 1px solid red;
     }
 
      
     .intro {
+        flex-shrink: 3;
 
-        float: left;
+                
     }
+
 
     nav {
         display: flex;
-        justify-content: center;
-        margin: 60px auto;
+        justify-content: left;
+        /* margin: 60px auto; */
         align-items: baseline;
-        border: 1px solid blue;
+
+    }
+}
+
+/* Breakpoint < 836px Banner */
+
+@media only screen and (max-width: 836px){
+
+    .intro p {
+        display: block
     }
 }
 
 
 /* Mobile Banner */
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 470px), (orientation: portrait) {
     
     .banner {
         display: block;
         margin: 5% auto;
-        border: 1px solid red;
+  
     }
 
     .profile-pic {
@@ -167,7 +175,7 @@ nav a:hover {
         display: flex;
         justify-content: center;
         margin: 40px auto;
-        border: 1px solid red;
+      
     }
 
 }
@@ -179,9 +187,8 @@ nav a:hover {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #808080;
-    font-family: "work sans";
-    margin-bottom: 40px;
+    color: #C4C4C4;
+    margin-bottom: 8%;
   }
   
   .separator::before,
@@ -202,7 +209,6 @@ nav a:hover {
   }
         
 
-
 /* Case studies */
 
 .case-studies {
@@ -212,9 +218,8 @@ nav a:hover {
 
 .thumbnail-container {
     width: 75%;
-    min-width: 400px;
     height: auto;
-    margin: 60px auto 20px auto;
+    margin: 5% auto 2% auto;
     display: block;
     overflow: hidden;
     
@@ -258,7 +263,7 @@ nav a:hover {
  }
 
 
-/* Breakpoint Banner */
+/* Breakpoint < 1000px Case Studies */
 
 
 @media only screen and (max-width: 1000px) {
@@ -269,16 +274,22 @@ nav a:hover {
 
 /* Mobile Banner */
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 470px), (orientation: portrait) {
 
     .thumbnail-container {
         width: 100%;
         min-width: none;
         height: auto;
-        margin: 60px auto 20px auto;
+        /* margin: 0; */
+
         display: block;
         
         
+    }
+
+    .case-studies h2 {
+        font-size: 1em;
+        margin: 0;
     }
 }
 
