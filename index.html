@@ -20,21 +20,61 @@
         <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- Banner -->
-        <!-- try giving the img and intro the banner class and setting banner to inline-block -->
-        <div class='banner'>
-            <div class="profile-pic">
-                <img src="./resources/images/portfolio profile w border.png" alt="Picture of Sean">
+        
+        <main>
+        <!-- Desktop -->
+        <div class='container-desktop'>
+            <div class="profile-pic-container">
+                <img class="profile-pic" src="./resources/images/portfolio profile w border.png" alt="Picture of Sean">
             </div>
             <div class='intro'>
                 <h3>Hi,</h3>
-                <h1 id="name">I'm Sean.</h1>
-                <p>I'm a student at the University of Maryland pursuing a bachelor’s degree in Information Science with a focus on User Experience Design.</p>
+                <h1>I'm Sean.</h1>
+                <p>I'm passionate about helping businesses craft memorable digital experiences through thoughtful user-centered design. <br><br>
+
+                    Currently studying Information Science at the University of Maryland - expected graduation in Spring 2022.</p>
                 <nav>
                        <a href="">CONTACT</a>
                         <a href="UX Resume 6.4.21.pdf" target="_blank">RESUMÉ</a> 
                 </nav>
             </div>
+        </div>
+        <!-- Tablet -->
+        <div class='container-tablet'>
+            <div class="profile-pic-container">
+                <img class="profile-pic" src="./resources/images/portfolio profile w border.png" alt="Picture of Sean">
+            </div>
+            <div class='intro'>
+                <h3>Hi,</h3>
+                <h1>I'm Sean.</h1>
+                <p>I'm passionate about helping businesses craft memorable digital experiences through thoughtful user-centered design.</p>
+            </div>
+            <div id="next-line">
+                <p id="">Currently studying Information Science at the University of Maryland - expected graduation in Spring 2022<p>
+                <nav>
+                       <a href="">CONTACT</a>
+                        <a href="UX Resume 6.4.21.pdf" target="_blank">RESUMÉ</a> 
+                </nav>
+            </div>
+        </div>
+         <!-- Mobile -->
+        <div class='container-mobile'>
+            <div class="profile-pic-container">
+                <img class="profile-pic" src="./resources/images/portfolio profile w border.png" alt="Picture of Sean">
+            </div>
+            <div class='intro'>
+                <h3>Hi,</h3>
+                <h1>I'm Sean.</h1>
+                <p>I'm passionate about helping businesses craft memorable digital experiences through thoughtful user-centered design. 
+                    <br><br>
+                Currently studying Information Science at the University of Maryland - expected graduation in Spring 2022.
+                </p>
+                <nav>
+                       <a href="">CONTACT</a>
+                        <a href="UX Resume 6.4.21.pdf" target="_blank">RESUMÉ</a> 
+                </nav>
+            </div>
+
         </div>
         <!-- Case Studies -->
         <div class="separator"><h4>Work</h4></div>
@@ -52,10 +92,12 @@
             </div>
             <h2>Final project for 'Advanced Interaction Design' at the University of Maryland</h2>
         </div>
-        
+    </main>
 
 
-     
+
+
+    <!-- onclick event inside DIV needed for iOS to respond to :hover -->
 
 
         <!-- DUMP 
@@ -68,5 +110,3 @@
         <div class="separator">Next section</div>
     </body>
 </html>
-
-
