@@ -90,7 +90,7 @@ img.profile-pic {
     display: inline-block;
     position: relative;
     top: 1rem;
-    margin-left: 2rem;
+    margin-left: .8rem;
     font-size: 48px;
     color: black;
 }
