@@ -202,10 +202,6 @@ nav a:hover {
 }
 
 
-
-
-
-
 @media screen and (max-width: 600px) {
     .container-desktop {
         display: none;
@@ -363,10 +359,21 @@ nav a:hover {
      margin-left: 15%;
      margin-bottom: 16px;
      max-width: 75%;
-
-
  }
 
+ footer a {
+     float: right;
+     margin: 2rem 3rem;
+     font-family: 'Courier New', Courier, monospace;
+     opacity: 0.9;
+     text-decoration: none;
+     
+ }
+
+ footer a:hover {
+     color: #07C3C3;
+     opacity: 1;
+ }
 
 
  /* DUMP
