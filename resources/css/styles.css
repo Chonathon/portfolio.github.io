@@ -305,7 +305,11 @@ nav a:hover {
   }
         
 
-
+.separator h4 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
 
 
 /* Case studies */
@@ -356,6 +360,7 @@ nav a:hover {
 }
 
  .case-studies h2 {
+     display: none;
      margin-left: 15%;
      margin-bottom: 16px;
      max-width: 75%;
