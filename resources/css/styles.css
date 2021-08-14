@@ -117,7 +117,7 @@ nav {
 }
 
 
-nav a {
+nav a.local {
     color: #07C3C3;
     border: 1px solid #07C3C3;
     background-color: white;
@@ -132,9 +132,38 @@ nav a {
     
 }
 
-nav a:hover {
+nav a.local:hover {
     border: 1px solid #818080;
     color: #818080;
+}
+
+.external {
+    display: inline-block;
+    width: 2rem;
+    height: auto;
+    padding: 1rem 1rem;
+    margin-right: 1rem;
+
+}
+
+.dribbble{
+    background: url('../images/Dribbble logo.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.linkedin {
+    background: url('../images/Linkedin Logo.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.dribbble:hover {
+    background-image: url('../images/Dribbbble Hover.png');
+}
+
+.linkedin:hover {
+    background-image: url('../images/LinkedIn\ Hover.png');
 }
 
 .container-mobile {
