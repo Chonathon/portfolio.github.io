@@ -211,10 +211,23 @@ nav a.local:hover {
         margin: 0;
         display: flex;
         flex: auto;
-        justify-content: center;
+        justify-content: space-between;
+        margin: 0 10%;
     }
 
-    nav a {
+    .local-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .external-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav a.local {
         
         padding: 4px 18px;
         margin: 0;
@@ -227,6 +240,12 @@ nav a.local:hover {
     }
     nav a:last-child {
         margin-left: 15%;
+    }
+
+    .external {
+        width: 100%;
+        height: auto;
+        padding: 1rem 1rem;
     }
 }
 
@@ -285,22 +304,37 @@ nav a.local:hover {
         margin: 0;
         display: flex;
         flex: auto;
-        justify-content: center;
+        flex-direction: column;
     }
 
-    nav a {
+   
+
+    nav a.local {
         
         padding: 4px 18px;
-        margin: 0;
         border-radius: 20px;
         font-family: serif;
         font-size: 18px;
         text-decoration: none;
         text-transform: capitalize;
+        padding-left: 1rem;
         
     }
-    nav a:last-child {
+    a.local:last-child, a.external:last-child {
         margin-left: 10%;
+    }
+
+    .external-container {
+        margin-right: 30%;
+    }
+    
+    .external {
+        display: inline-block;
+        margin-top: 1.5rem;
+        width: 1rem;
+        height: auto;
+        padding: 1rem 1rem;
+
     }
 }
 
@@ -474,5 +508,3 @@ h4 {
      height: 1px;
      margin: 60px 80px; 
  }
-
- */
