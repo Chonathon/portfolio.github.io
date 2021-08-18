@@ -207,14 +207,25 @@ nav a.local:hover {
         flex: none;
     }
 
+   
+    .intro p {
+        margin-bottom: -10%;
+    }
+
+    /* #next-line {
+        display: flex;
+        justify-content: center;
+    } */
+
     #next-line p {
         display: block;
         font-size: 24px;
+        margin-top: 0;
         margin-bottom: 3rem;
         color: #51565A;
         letter-spacing: 1.2px;
         line-height: 32px;
-        max-width: 550px;
+        max-width: 720px;
         font-family: "Open Sans";
     }
 
@@ -238,7 +249,7 @@ nav a.local:hover {
         align-items: center;
     }
 
-    nav a.local {
+   .local {
         
         padding: 4px 18px;
         margin: 0;
@@ -249,7 +260,7 @@ nav a.local:hover {
         text-transform: capitalize;
         
     }
-    nav a:last-child {
+    .local:last-child {
         margin-left: 15%;
     }
 
@@ -307,6 +318,7 @@ nav a.local:hover {
     }
     
     .intro p {
+        text-align: center;
         margin-bottom: 3rem;
     }
       
@@ -331,12 +343,12 @@ nav a.local:hover {
         padding-left: 1rem;
         
     }
-    a.local:last-child, a.external:last-child {
-        margin-left: 10%;
+    a.local:last-child, {
+        /* margin-left: 5%; */
     }
 
     .external-container {
-        margin-right: 30%;
+        /* margin-right: 30%; */
     }
     
     .external {
