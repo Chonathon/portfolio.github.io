@@ -158,6 +158,12 @@ nav a.local:hover {
     background-size: cover;
 }
 
+.github {
+    background: url('../images/Github\ logo.png');
+    background-position: center;
+    background-size: cover;
+}
+
 .dribbble:hover {
     background-image: url('../images/Dribbbble Hover.png');
 }
@@ -165,6 +171,11 @@ nav a.local:hover {
 .linkedin:hover {
     background-image: url('../images/LinkedIn\ Hover.png');
 }
+
+.github:hover {
+    background-image: url('../images/Github\ Hover.png');
+}
+
 
 .container-mobile {
     display: none;
