@@ -66,22 +66,16 @@ main {
 }
 
 img.profile-pic {
-    /* margin: 50px 100px 0 0;
-    height: 660px;
-    width: auto;
-    float: left; */
     width: 100%;
-    /* height: auto; */
 }
 
 .intro {
     max-width: 50%;
-    /* padding: 10% 0; */
 }
 
 .intro h3 {
     display: inline-block;
-    vertical-align:top;
+    vertical-align: top;
 
     
 }
@@ -113,7 +107,7 @@ nav {
     border-color: #07C3C3; */
     border-width: .5px;
     margin-top: 3rem;
-    min-width: 400px;
+    min-width: 350px;
 }
 
 
@@ -212,10 +206,10 @@ nav a.local:hover {
         margin-bottom: -10%;
     }
 
-    /* #next-line {
+    #next-line {
         display: flex;
         justify-content: center;
-    } */
+    }
 
     #next-line p {
         display: block;
@@ -272,13 +266,17 @@ nav a.local:hover {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
     .container-desktop {
         display: none;
     }
 
     .container-tablet {
         display: none;
+    }
+
+    html {
+        width: 100%;
     }
 
     .container-mobile {
@@ -299,7 +297,7 @@ nav a.local:hover {
         width: 100%;
     }
 
-    
+   
     .intro {
         max-width: 100%;
         padding: 0 5%;
@@ -307,7 +305,7 @@ nav a.local:hover {
 
     .intro h3 {
         display: inline-block;
-        vertical-align:top;
+        vertical-align: center;
         margin-left: 5%;
         
     }
@@ -315,6 +313,7 @@ nav a.local:hover {
     .intro h1 {
         display: inline-block;
         margin-left: 5%;
+        top: 0;
     }
     
     .intro p {
@@ -324,8 +323,8 @@ nav a.local:hover {
       
     
     nav {
-        margin: 0;
         display: flex;
+        margin: auto;
         flex: auto;
         flex-direction: column;
     }
@@ -343,12 +342,15 @@ nav a.local:hover {
         padding-left: 1rem;
         
     }
-    a.local:last-child, {
-        /* margin-left: 5%; */
+
+    a.local:last-child {
+        margin-left: 0;
     }
 
     .external-container {
         /* margin-right: 30%; */
+        border: 1px solid red;
+        margin: auto;
     }
     
     .external {
@@ -408,7 +410,7 @@ nav a.local:hover {
 .thumbnail-container {
     box-sizing: border-box;
     width: 75%;
-    min-width: 400px;
+    min-width: 350px;
     height: auto;
     margin: 60px auto 20px auto;
     display: block;
