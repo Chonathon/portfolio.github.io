@@ -35,6 +35,11 @@ h3 {
     color: #07C3C3;
     font-size: 30px;
 }
+
+a {
+    color: #07C3C3;
+    text-decoration: none;
+}
 main {
     max-width: 1200px;
     margin-left: auto;
