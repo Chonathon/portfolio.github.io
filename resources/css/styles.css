@@ -418,13 +418,16 @@ nav a.local:hover {
     overflow: hidden;
     
  }
-
+#chiv {
+    box-shadow: 0 0 8px #F3CA74;
+}
 #makeathon {
     box-shadow: 0 0 8px #FF519C;
 }
 #motion-x {
     box-shadow: 0 0 8px #FFA00E;
 }
+
 
 
  .thumbnail {
@@ -440,11 +443,16 @@ nav a.local:hover {
 
  }
 
- #motion-x.thumbnail-container:hover, #makeathon.thumbnail-container:hover {
+
+ #motion-x.thumbnail-container:hover,
+    #makeathon.thumbnail-container:hover,
+        #chiv.thumbnail-container:hover {
     box-shadow: 0 0 8px #808080;
  }
 
-#motion-x.thumbnail-container:active, #makeathon.thumbnail-container:active {
+#motion-x.thumbnail-container:active,
+    #makeathon.thumbnail-container:active,
+        #chiv.thumbnail-container:active {
     box-shadow: inset 0 0 #736B92;
 }
 
