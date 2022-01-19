@@ -154,11 +154,7 @@ nav a.local:hover {
     background-size: cover;
 }
 
-.medium {
-    background: url("../images/logos/Medium Logo.png");
-    background-position: center;
-    background-size: cover;
-}
+
 .dribbble{
     background: url('../images/Dribbble logo.png');
     background-position: center;
