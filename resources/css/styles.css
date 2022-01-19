@@ -4,6 +4,7 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   *,
   *:before,
@@ -25,7 +26,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Work Sans";
+    font-family: "Merriweather";
     font-weight: normal;
 }
 
@@ -45,6 +46,10 @@ main {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
+}
+
+.accent {
+    color:#07C3C3;
 }
 
 @media screen and (max-width: 470px) {
@@ -78,19 +83,20 @@ img.profile-pic {
     max-width: 50%;
 }
 
-.intro h3 {
-    display: inline-block;
-    vertical-align: top;
+.intro h2 {
+    display: block;
+    /* vertical-align: top; */
+    font-size: 30px;
 
     
 }
 
 .intro h1 {
-    display: inline-block;
-    position: relative;
+    display: block;
+    /* position: relative;
     top: 1rem;
-    margin-left: .8rem;
-    font-size: 48px;
+    margin-left: .8rem; */
+    font-size: 46.88px;
     color: black;
 }
 
@@ -101,14 +107,14 @@ img.profile-pic {
     letter-spacing: 1.2px;
     line-height: 32px;
     max-width: 550px;
-    font-family: "Open Sans";
+    font-family: "Avenir";
 }
 
 
 
 nav {
     border-width: .5px;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     min-width: 350px;
 }
 
@@ -120,7 +126,7 @@ nav a.local {
     color: #07C3C3;
     padding: 4px 18px;
     border-radius: 20px;
-    font-family: serif;
+    font-family: "Avenir";
     font-size: 18px;
     text-decoration: none;
     margin: 0 12px 0 0;
@@ -142,17 +148,23 @@ nav a.local:hover {
 
 }
 
+.linkedin {
+    background: url('../images/Linkedin Logo.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.medium {
+    background: url("../images/logos/Medium Logo.png");
+    background-position: center;
+    background-size: cover;
+}
 .dribbble{
     background: url('../images/Dribbble logo.png');
     background-position: center;
     background-size: cover;
 }
 
-.linkedin {
-    background: url('../images/Linkedin Logo.png');
-    background-position: center;
-    background-size: cover;
-}
 
 .github {
     background: url('../images/Github\ logo.png');
@@ -256,9 +268,6 @@ nav a.local:hover {
         text-transform: capitalize;
         
     }
-    .local:last-child {
-        margin-left: 15%;
-    }
 
     .external {
         width: 100%;
@@ -305,17 +314,19 @@ nav a.local:hover {
         padding: 0 5%;
     }
 
-    .intro h3 {
-        display: inline-block;
-        vertical-align: center;
-        margin-left: 5%;
-        
-    }
+ 
     
     .intro h1 {
-        display: inline-block;
-        margin-left: 5%;
+        display: block;
+        text-align: center;
+        /* margin-left: 5%; */
         top: 0;
+    }
+
+    .intro h2 {
+        vertical-align: center;
+        text-align: center;
+        
     }
     
     .intro p {
