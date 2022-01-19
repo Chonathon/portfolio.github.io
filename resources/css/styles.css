@@ -14,7 +14,6 @@ html {
 
 body {
     font-size: 100%;
-    font-family: Arial;
 }
 
 
@@ -23,6 +22,7 @@ body {
 h1 {
     font-family: "Merriweather";
     font-weight: lighter;
+    color: #333333;
 }
 
 h2 {
@@ -312,10 +312,9 @@ nav a.local:hover {
 
  
     
-    .intro h1 {
+ .intro h1 {
         display: block;
         text-align: center;
-        /* margin-left: 5%; */
         top: 0;
     }
 
