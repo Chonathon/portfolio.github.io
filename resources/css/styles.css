@@ -14,6 +14,7 @@ html {
 
 body {
     font-size: 100%;
+    font-family: Arial;
 }
 
 
@@ -22,7 +23,6 @@ body {
 h1 {
     font-family: "Merriweather";
     font-weight: lighter;
-    color: #333333;
 }
 
 h2 {
@@ -312,7 +312,7 @@ nav a.local:hover {
 
  
     
- .intro h1 {
+    .intro h1 {
         display: block;
         text-align: center;
         top: 0;
@@ -425,7 +425,7 @@ nav a.local:hover {
     
  }
 #chiv {
-    box-shadow: 0 0 8px #F3CA74;
+    box-shadow: 0 0 8px #263E5B;
 }
 #makeathon {
     box-shadow: 0 0 8px #FF519C;
