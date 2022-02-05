@@ -21,24 +21,36 @@ body {
 /* Typography */
 
 h1 {
-    font-family: "Merriweather";
-    font-weight: lighter;
+    font-family: "Raleway";
+    font-weight: normal;
+    letter-spacing: .05em;
+    color: #333;
 }
 
 h2 {
-    font-family: "Merriweather";
+    font-family: "Raleway";
     font-weight: normal;
+    letter-spacing: .05em;
+    color: #4f4f4f;
 }
 
 h3 {
-    font-family: "Merriweather";
+    font-family: "Raleway";
     font-weight: lighter;
-    color: #07C3C3;
+    color: #398F8F;
     font-size: 30px;
+    color: #333;
+}
+
+p {
+    font-family: "Mulish";
+    font-size: 24px;
+    line-height: 1.5em;
+    color: #333;
 }
 
 a {
-    color: #07C3C3;
+    color: #398F8F;
     text-decoration: none;
 }
 main {
@@ -49,7 +61,7 @@ main {
 }
 
 .accent {
-    color:#07C3C3;
+    color:#398F8F;
 }
 
 @media screen and (max-width: 470px) {
@@ -62,9 +74,10 @@ main {
 
 .container-desktop {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: top;
     flex-wrap: wrap;
     margin-bottom: 5%;
 }
@@ -80,6 +93,7 @@ img.profile-pic {
 }
 
 .intro {
+    margin-top: 7em;
     max-width: 50%;
 }
 
@@ -101,14 +115,14 @@ img.profile-pic {
 
 
 
-.intro p {
+/* .intro p {
     font-size: 24px;
     color: #51565A;
     letter-spacing: 1.2px;
     line-height: 32px;
     max-width: 550px;
     font-family: "Avenir";
-}
+} */
 
 
 
@@ -120,10 +134,10 @@ nav {
 
 
 nav a.local {
-    color: #07C3C3;
-    border: 1px solid #07C3C3;
+    color: #398F8F;
+    border: 1px solid #398F8F;
     background-color: white;
-    color: #07C3C3;
+    color: #398F8F;
     padding: 4px 18px;
     border-radius: 20px;
     font-family: "Avenir";
@@ -210,7 +224,10 @@ nav a.local:hover {
         width: 300px;
         flex: none;
     }
-
+    
+    .intro {
+        margin-top:0;
+    }
    
     .intro p {
         margin-bottom: -10%;
@@ -230,7 +247,7 @@ nav a.local:hover {
         letter-spacing: 1.2px;
         line-height: 32px;
         max-width: 720px;
-        font-family: "Open Sans";
+
     }
 
     nav {
@@ -307,6 +324,7 @@ nav a.local:hover {
    
     .intro {
         max-width: 100%;
+        margin-top:0;
         padding: 0 5%;
     }
 
@@ -343,7 +361,7 @@ nav a.local:hover {
         
         padding: 4px 18px;
         border-radius: 20px;
-        font-family: serif;
+        font-family: "Mulish";
         font-size: 18px;
         text-decoration: none;
         text-transform: capitalize;
@@ -486,7 +504,7 @@ nav a.local:hover {
  }
 
  footer a:hover {
-     color: #07C3C3;
+     color: #398F8F;
      opacity: 1;
  }
 
