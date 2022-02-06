@@ -25,13 +25,10 @@
         display: none;
     }
 }
-@media screen and (max-width: 600px){
+
     /* add to bottom nav */
-    /* .nav-bg {
-        display: block;
-        bottom: 90em;
-} */
-}
+
+
 
 .bg-dots {
     background: url("../../assets/images/background/Dots.svg") no-repeat;

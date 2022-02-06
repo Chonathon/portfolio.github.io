@@ -93,7 +93,7 @@ body {
 }
 
 .wrapper {
-    margin-bottom: 8em;
+    margin-bottom: 6em;
 }
 
 .container {
@@ -120,7 +120,7 @@ body {
 
 .logo {
     position: absolute;
-    top: 7em;
+    top: 3em;
     left: 70px;
 }
 
@@ -171,7 +171,7 @@ nav a:last-of-type {
     flex-direction: column;
     align-items: center;
     margin-top: 350px;
-    margin-bottom: 5em;
+    margin-bottom: 8em;
 }
 
 .spash > * {
@@ -398,6 +398,12 @@ footer img {
       
     }
 
+    .splash {
+        margin-top: 16em;
+        margin-bottom: 5em;
+    }
+    
+
     footer .container {
         flex-direction: column;
         justify-content: space-between;
@@ -434,9 +440,6 @@ footer img {
    
 
     .splash {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         margin-top: 8em;
         margin-bottom: 5em;
     }
