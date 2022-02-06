@@ -18,8 +18,8 @@ html {
 body {
     font-size: 100%;
     font-family: Arial;
- 
-   
+  
+
  
 }
 
@@ -27,6 +27,7 @@ main {
     position: relative;
     padding-bottom: 10em;
     min-height: 2000px;
+    
 }
 
 
@@ -374,8 +375,9 @@ footer .container {
 footer img {
     height: 80px;
     width: auto;
-    margin-right: 1em;
+    margin-right: 2em;
 }
+
  footer p {
      font-family: 'Courier New', Courier, monospace;
      color: #0C2727;
@@ -386,24 +388,57 @@ footer img {
     .header-large {
         display: none;
     }
-
+    .logo {
+        top: .5em;
+        left: 20px;
+    }
     .logo img {
-        position: absolute;
         height: 80px;
         width: auto;
-        top: 1em;
-        left: 35px;
+      
+    }
+
+    footer .container {
+        flex-direction: column;
+        justify-content: space-between;
     }
     
     .header-small {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
-        /* padding: 32px 35px 24px 35px; */
+        padding: 32px 35px 24px 35px;
         height: 5em;
         width: 100%;
         z-index: 999;
     }
 
+
+}
+@media screen and (max-width: 600px) {
+    
+    footer {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+
+    .header-small {
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        background-color: hsl(180, 33%, 70%);
+        height: 3em;
+    }
+   
+
+    .splash {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8em;
+        margin-bottom: 5em;
+    }
 
 }

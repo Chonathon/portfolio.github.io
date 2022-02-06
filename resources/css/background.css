@@ -8,10 +8,10 @@
     right: 0;
 }
 
+
 @media screen and (max-width: 1400px) {
     .nav-bg {
       width: 90%;
-       
     }
 }
 @media screen and (max-width: 1200px) {
@@ -19,10 +19,18 @@
         width: 100%;  
     }
 }
+
 @media screen and (max-width: 1000px) {
     .nav-bg {
         display: none;
     }
+}
+@media screen and (max-width: 600px){
+    /* add to bottom nav */
+    /* .nav-bg {
+        display: block;
+        bottom: 90em;
+} */
 }
 
 .bg-dots {
@@ -40,7 +48,14 @@
 }
 #c {
     right: 0;
-    top: 38em;
+    top: 35em;
+}
+
+@media screen and (max-width: 750px) {
+    #c {
+        right: 0;
+        top: 47em;
+    }
 }
 
 .bg-s-tri {
@@ -90,12 +105,12 @@
     position: absolute;
     background-size: contain;
     overflow: hidden;
-    
+    width: 100%;
 }
 
 #g {
     top: 70em;
-    left: 0;
+    left: 35px;
 }
 
 #h {
