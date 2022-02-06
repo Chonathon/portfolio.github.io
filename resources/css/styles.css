@@ -18,9 +18,23 @@ body {
 }
 
 
-/* Typography */
 
-h1 {
+/* Typography */
+h1, h2, h3, h4, h5, p {
+    line-height: 0;
+
+}
+
+p {
+    color: #333;
+}
+
+a {
+    font-family: "Mulish";
+    text-decoration: none;
+}
+
+/* h1 {
     font-family: "Raleway";
     font-weight: normal;
     letter-spacing: .05em;
@@ -49,26 +63,233 @@ p {
     color: #333;
 }
 
-a {
-    color: #398F8F;
-    text-decoration: none;
-}
-main {
-    max-width: 1200px;
+*/
+/* main {
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
-}
+} */
 
 .accent {
     color:#398F8F;
+} 
+body {
+    background: url('../../assets/images/background.svg');
+    -webkit-font-smoothing: antialiased;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (max-width: 470px) {
-    main {
-        margin-top: 0;
-    }
+.wrapper {
+    margin-bottom:
 }
+
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 32px 70px 24px 0px;
+    height: 5em;
+    width: 100%;
+}
+
+.logo {
+    position:absolute;
+    top: 70px;
+    left: 70px;
+}
+
+.nav-bg {
+    position: absolute;
+    width: 70%;
+    background: url("../../assets/images/tri-container.svg");
+    background-size: cover;
+    height: 15em;
+    top: 0;
+    right: 0;
+
+}
+
+
+nav {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav > a {
+    margin-right: 1.25em;
+}
+
+nav a:last-of-type {
+    margin-right: 0;
+}
+
+.button {
+    display: flex;
+    padding: 4px 16px 4px 16px;
+    color: #309A9A;
+    background-color: #fff;
+    border: 1px solid #309A9A;
+    border-radius: 1px;
+    text-transform: uppercase;
+    
+    box-shadow: -2px 2px 0 -1px#C3D3D3, -2px 2px 0 #398F8F;
+    z-index: 999;
+}
+
+.button:hover {
+    transform: translateX(-.5px) translateY(.5px);
+    box-shadow: -1.5px 1.5px 0 -1px#C3D3D3, -1.5px 1.5px 0 #398F8F;
+}
+.button:active {
+    transform: translateX(-2px) translateY(2px);
+    box-shadow: none;
+}
+
+/* Splash */
+
+.splash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.spash * {
+    margin-top: 5em;
+}
+
+.splash h1 {
+    display: inline-block;
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #0C2727;
+    text-transform: uppercase;
+    font-size: 5em;
+    letter-spacing: .1em;
+}
+
+.splash p {
+    font-family: "Mulish";
+    font-size: 1.5em;
+    color: #4F4F4F;
+}
+
+
+.external-container {
+    margin-top: 1em;
+}
+.external {
+    display: inline-block;
+    width: 2rem;
+    height: auto;
+    padding: 1rem 1rem;
+    margin-right: .75rem;
+}
+.external:hover {
+    transform: translateY(.5px);
+}
+
+.linkedin {
+    background: url('../../assets/images/logos/LinkedInLogo-Default.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.linkedin:hover {
+    background-image: url('../../assets/images/logos/LinkedInLogo-Hover.svg');
+}
+
+.medium {
+    background: url('../../assets/images/logos/MediumLogo-Default.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2.5em;
+}
+
+.medium:hover {
+    background-image: url('../../assets/images/logos/MediumLogo-Hover.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.twitter {
+    background: url('../../assets/images/logos/TwitterLogo-Default.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.twitter:hover {
+    background-image: url('../../assets/images/logos/TwitterLogo-Hover.svg');
+}
+
+.dribbble{
+    background: url('../../assets/images/logos/DribbbleLogo-Default.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.dribbble:hover {
+    background-image: url('../../assets/images/logos/DribbbleLogo-Hover.svg');
+}
+
+.github {
+    background: url('../../assets/images/logos/GitHubLogo-Default.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.github:hover {
+    background-image: url('../../assets/images/logos/GitHubLogo-Hover.svg');
+}
+
+/* Separator */
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #808080;
+    font-family: "work sans";
+    margin-bottom: 40px;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #C4C4C4;
+  }
+  
+  .separator:not(:empty)::before {
+    margin-right: 3em;
+    margin-left: 3em;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+        
+
+.separator h4 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+/*---------------------------------------------------------------- 
+
 
 /* Hero */
 
@@ -115,14 +336,14 @@ img.profile-pic {
 
 
 
-/* .intro p {
+.intro p {
     font-size: 24px;
     color: #51565A;
     letter-spacing: 1.2px;
     line-height: 32px;
     max-width: 550px;
     font-family: "Avenir";
-} */
+} 
 
 
 
@@ -153,46 +374,7 @@ nav a.local:hover {
     color: #818080;
 }
 
-.external {
-    display: inline-block;
-    width: 2rem;
-    height: auto;
-    padding: 1rem 1rem;
-    margin-right: .75rem;
 
-}
-
-.linkedin {
-    background: url('../images/Linkedin Logo.png');
-    background-position: center;
-    background-size: cover;
-}
-
-
-.dribbble{
-    background: url('../images/Dribbble logo.png');
-    background-position: center;
-    background-size: cover;
-}
-
-
-.github {
-    background: url('../images/Github\ logo.png');
-    background-position: center;
-    background-size: cover;
-}
-
-.dribbble:hover {
-    background-image: url('../images/Dribbbble Hover.png');
-}
-
-.linkedin:hover {
-    background-image: url('../images/LinkedIn\ Hover.png');
-}
-
-.github:hover {
-    background-image: url('../images/Github\ Hover.png');
-}
 
 
 .container-mobile {
@@ -506,7 +688,7 @@ nav a.local:hover {
  footer a:hover {
      color: #398F8F;
      opacity: 1;
- }
+ } 
 
 
  /* DUMP
