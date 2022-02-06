@@ -1,0 +1,116 @@
+
+.nav-bg {
+    position: absolute;
+    width: 70%;
+    background: url("../../assets/images/background/tri-container.svg") no-repeat;
+    background-size: contain;
+    top: 0;
+    right: 0;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .nav-bg {
+      width: 90%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .nav-bg {
+        width: 100%;  
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-bg {
+        display: none;
+    }
+}
+
+    /* add to bottom nav */
+
+
+
+.bg-dots {
+    background: url("../../assets/images/background/Dots.svg") no-repeat;
+    position: absolute;
+    overflow: hidden;
+    
+}
+
+#a {
+    top: 7em;
+}
+#b {
+    top: 150em;
+}
+#c {
+    right: 0;
+    top: 35em;
+}
+
+@media screen and (max-width: 750px) {
+    #c {
+        right: 0;
+        top: 47em;
+    }
+}
+
+.bg-s-tri {
+    background: url("../../assets/images/background/SmallTriangle.svg") no-repeat;
+    position: absolute;
+    overflow: hidden;
+}
+
+#d {
+    left: 10em;
+    top: 27em;
+}
+@media screen and (max-width: 1400px) {
+    #d {
+        left: 5em;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #d {
+        left:2em;
+    }
+}
+@media screen and (max-width: 1075px) {
+    #d {
+        display: none;
+    }
+}
+
+#e {
+    right: 10em;
+    top: 50em;
+}
+
+#f {
+    left: 10em;
+    top: 127em;
+
+}
+
+#i {
+    left: 10em;
+    top: 185em;
+}
+
+.bg-l-tri {
+    background: url("../../assets/images/background/LargeTriangle.svg") no-repeat;
+    position: absolute;
+    background-size: contain;
+    overflow: hidden;
+    width: 100%;
+}
+
+#g {
+    top: 70em;
+    left: 35px;
+}
+
+#h {
+    top: 130em;
+    right: 0;
+}
