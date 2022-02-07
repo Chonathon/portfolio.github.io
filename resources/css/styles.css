@@ -112,11 +112,14 @@ body {
     z-index: 999;
 }
 
-@media screen and (min-width: 801px) {
+
     .header-small {
         display: none;
     }
-}
+
+    .cs-title-card-mobile {
+        display: none;
+    }
 
 .logo {
     position: absolute;
@@ -462,6 +465,16 @@ footer img {
         font-size: 1.25em;
     }
 
+    .thumbnail-container:hover {
+       transform: none;
+       box-shadow: none;
+     }
+
+    .thumbnail-container:active {
+        /* transform: translateX(2px) translateY(-2px); */
+        box-shadow: none;
+     }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -473,5 +486,25 @@ footer img {
     .splash h1 {
         font-size: 3em;
 
+    }
+
+    .cs-title-card {
+        display: none;
+    }
+
+    .cs-title-card-mobile {
+        display: block;
+        box-sizing: border-box;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 1px;
+        margin: 1em 0 1em .5em;
+    }
+
+    .cs-title-card-mobile h2 {
+        font-size: 1.25em;
     }
 }
