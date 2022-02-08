@@ -1,9 +1,6 @@
 
 .nav-bg {
     position: absolute;
-    width: 70%;
-    background: url("../../assets/images/background/tri-container.svg") no-repeat;
-    background-size: contain;
     top: 0;
     right: 0;
 }
