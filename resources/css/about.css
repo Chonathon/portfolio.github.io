@@ -28,6 +28,10 @@ h4 {
     color: #4F4F4F
 }
 
+p {
+    font-size: 1.125em;
+    margin-bottom: .5em;
+}
 
 a {
     color: #398F8F;
@@ -35,7 +39,7 @@ a {
 }
 
 .wrapper-sub-page {
-    max-width: 805px;
+    max-width: 900px;
     margin: 15em auto 0 auto;
 }
 
@@ -45,7 +49,7 @@ a {
 }
 .left {
     align-items: flex-start;
-    max-width: 24.5em;
+    max-width: 27.5em;
     margin-right: 1.25em;
 }
 
@@ -54,6 +58,10 @@ a {
     flex-direction: column;
     justify-content: center;
 
+}
+
+.intro {
+    justify-content: space-between;
 }
 
 /* .contact-form {
