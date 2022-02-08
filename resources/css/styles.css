@@ -93,7 +93,7 @@ h4 {
 
 p {
     font-family: "Mulish";
-    font-size: 1em;
+    font-size: 1.125em;
     line-height: 1.5em;
     color: #4F4F4F;
 }
@@ -378,7 +378,7 @@ footer {
     align-items: center; */
     position: absolute;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 112px;
