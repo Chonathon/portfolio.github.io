@@ -16,16 +16,16 @@ html {
   }
 
 body {
-    font-size: 100%;
-    font-family: Arial;
-  
 
+    font-family: Arial;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
  
 }
 
 main {
     position: relative;
-    padding-bottom: 112px;
+    padding: 0 2em 112px 2em;
     min-height: 2000px;
     
 }
@@ -47,11 +47,17 @@ a {
 }
 
 h1 {
+    position:relative;
+    display: inline-block;
     font-family: "Raleway";
-    font-weight: normal;
+    font-weight: 300;
+    color: #0C2727;
+    text-transform: uppercase;
+    font-size: 5em;
     line-height: 1em;
-    letter-spacing: .05em;
-    color: #333;
+    letter-spacing: .1em;
+    margin-bottom: .2em;
+    text-align: center;
 }
 
 h2 {
@@ -60,7 +66,7 @@ h2 {
     font-weight: 600;
     font-size: 1.875em;
     letter-spacing: .25em;
-    line-height: 1.875em;
+    line-height: 1em;
     color: #333;
 }
 
@@ -75,11 +81,21 @@ h3 {
 
 }
 
+h4 {
+    font-family: "Mulish";
+    font-size: 1.5em;
+    color: #398F8F;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: .2em;
+    line-height: 1.5em;
+}
+
 p {
     font-family: "Mulish";
-    font-size: 24px;
+    font-size: 1em;
     line-height: 1.5em;
-    color: #333;
+    color: #4F4F4F;
 }
 
 
@@ -87,10 +103,7 @@ p {
 .accent {
     color:#398F8F;
 } 
-body {
-    /* background: url('../../assets/images/background.svg'); */
-    -webkit-font-smoothing: antialiased;
-}
+
 
 .wrapper {
     margin-bottom: 6em;
@@ -146,7 +159,7 @@ nav a:last-of-type {
 }
 
 .button {
-    display: flex;
+    display: block;
     padding: 4px 16px 4px 16px;
     color: #309A9A;
     background-color: #fff;
@@ -195,6 +208,8 @@ nav a:last-of-type {
 }
 
 .splash p {
+    font-family: "Mulish";
+    line-height: 1.5em;
     font-family: "Mulish";
     font-size: 1.5em;
     color: #4F4F4F;
@@ -285,6 +300,7 @@ nav a:last-of-type {
     letter-spacing: .05;
     margin-bottom: 0;
     
+    
 }
 
 
@@ -339,7 +355,7 @@ nav a:last-of-type {
     border: 1px solid #716D6D;
     border-radius: 1px;
     box-shadow: -2px 2px 0 #716D6D;
-    padding: 0 2em .875em 2em;
+    padding: .875em 2em .875em 2em;
 }
 
 
@@ -361,6 +377,9 @@ footer {
     /* display: flex;
     align-items: center; */
     position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     height: 112px;
     bottom: 0;
@@ -372,11 +391,14 @@ footer {
  }
 
 footer .container {
-    justify-content: space-around;
-    align-items: center;
+    margin-bottom: .5em;
+    margin-left: 3em;
 }
 
-footer img {
+footer a img {
+    position: absolute;
+    left: 3em;
+    bottom: 1em;
     height: 80px;
     width: auto;
     margin-right: 2em;
@@ -387,6 +409,7 @@ footer img {
      color: #0C2727;
      margin-right: 1em;
  }
+
 
 @media screen and (max-width: 800px) {
     .header-large {
@@ -438,8 +461,13 @@ footer img {
         justify-content: center;
         position: fixed;
         bottom: 0;
+        left: 0;
         background-color: hsl(180, 33%, 70%);
         height: 3em;
+    }
+
+    .button {
+        margin-right: .5em;
     }
    
 

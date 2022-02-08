@@ -1,3 +1,141 @@
-p.about {
-    
+
+
+
+h2 {
+    font-family: "Mulish";
+    text-transform: none;
+    font-weight: 400;
+    font-size: 1.875em;
+    letter-spacing: 0;
+    line-height: 1.4em;
+    margin-bottom: .5em;
+    color: #333;
 }
+
+h3 {
+    font-family: "Mulish";
+    font-weight: 600;
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #398F8F;
+    font-size: 1.125em;
+    margin-bottom: .5em;
+
+}
+
+h4 {
+    color: #4F4F4F
+}
+
+p {
+    font-size: 1.125em;
+    margin-bottom: .5em;
+}
+
+a {
+    color: #398F8F;
+    text-decoration: underline;
+}
+
+.wrapper-sub-page {
+    max-width: 900px;
+    margin: 15em auto 0 auto;
+}
+
+.full {
+    align-items: flex-start;
+    margin-bottom: 3em;
+}
+.left {
+    align-items: flex-start;
+    max-width: 27.5em;
+    margin-right: 1.25em;
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.intro {
+    justify-content: space-between;
+}
+
+/* .contact-form {
+    margin-top: 4em;
+
+}
+label {
+    font-family: "Mulish";
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #4F4F4F;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: .875em;
+    border: 2px solid #398F8F;
+    border-radius: 1px;
+    box-sizing: border-box; 
+    margin-top: .5em;
+    margin-bottom: 1em;
+    resize: vertical;    font-family: "Mulish";
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #4F4F4F;
+  }
+  
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  } */
+.tablet {
+    display: none;
+}
+.mobile{
+    display: none;
+}
+  @media screen and (max-width: 800px){
+      .desktop {
+          display: none;
+      }
+
+      .tablet {
+          display: block;
+      }
+
+      .mobile {
+          display: none;
+      }
+
+      .intro {
+          margin-bottom: 1em;
+      }
+
+      .headshot img {
+        max-width: 356px;
+      }
+  }
+
+  @media screen and (max-width: 650px) {
+      .tablet {
+          display: none;
+      }
+      .mobile {
+          display: block;
+      }
+
+ 
+  }
