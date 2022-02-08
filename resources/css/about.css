@@ -7,7 +7,8 @@ h2 {
     font-weight: 400;
     font-size: 1.875em;
     letter-spacing: 0;
-    line-height: 1.875em;
+    line-height: 1.4em;
+    margin-bottom: .5em;
     color: #333;
 }
 
@@ -18,12 +19,19 @@ h3 {
     text-transform: none;
     letter-spacing: 0;
     color: #398F8F;
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 1.125em;
+    margin-bottom: .5em;
+
 }
 
 h4 {
     color: #4F4F4F
+}
+
+
+a {
+    color: #398F8F;
+    text-decoration: underline;
 }
 
 .wrapper-sub-page {
@@ -31,13 +39,14 @@ h4 {
     margin: 15em auto 0 auto;
 }
 
-a {
-    color: #398F8F;
-    text-decoration: underline;
+.full {
+    align-items: flex-start;
+    margin-bottom: 3em;
 }
-
 .left {
     align-items: flex-start;
+    max-width: 24.5em;
+    margin-right: 1.25em;
 }
 
 .container-column {
@@ -47,7 +56,7 @@ a {
 
 }
 
-.contact-form {
+/* .contact-form {
     margin-top: 4em;
 
 }
@@ -71,7 +80,7 @@ input[type=text], select, textarea {
     color: #4F4F4F;
   }
   
-  /* Style the submit button with a specific background color etc */
+
   input[type=submit] {
     background-color: #04AA6D;
     color: white;
@@ -83,4 +92,42 @@ input[type=text], select, textarea {
   
   input[type=submit]:hover {
     background-color: #45a049;
+  } */
+.tablet {
+    display: none;
+}
+.mobile{
+    display: none;
+}
+  @media screen and (max-width: 800px){
+      .desktop {
+          display: none;
+      }
+
+      .tablet {
+          display: block;
+      }
+
+      .mobile {
+          display: none;
+      }
+
+      .intro {
+          margin-bottom: 1em;
+      }
+
+      .headshot img {
+        max-width: 356px;
+      }
+  }
+
+  @media screen and (max-width: 650px) {
+      .tablet {
+          display: none;
+      }
+      .mobile {
+          display: block;
+      }
+
+ 
   }
