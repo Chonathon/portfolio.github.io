@@ -47,11 +47,17 @@ a {
 }
 
 h1 {
+    position:relative;
+    display: inline-block;
     font-family: "Raleway";
-    font-weight: normal;
+    font-weight: 300;
+    color: #0C2727;
+    text-transform: uppercase;
+    font-size: 5em;
     line-height: 1em;
-    letter-spacing: .05em;
-    color: #333;
+    letter-spacing: .1em;
+    margin-bottom: .2em;
+    text-align: center;
 }
 
 h2 {
@@ -75,11 +81,21 @@ h3 {
 
 }
 
+h4 {
+    font-family: "Mulish";
+    font-size: 1.5em;
+    color: #398F8F;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: .2em;
+    line-height: 1.5em;
+}
+
 p {
     font-family: "Mulish";
-    font-size: 24px;
+    font-size: 1em;
     line-height: 1.5em;
-    color: #333;
+    color: #4F4F4F;
 }
 
 
@@ -146,7 +162,7 @@ nav a:last-of-type {
 }
 
 .button {
-    display: flex;
+    display: block;
     padding: 4px 16px 4px 16px;
     color: #309A9A;
     background-color: #fff;
@@ -195,6 +211,8 @@ nav a:last-of-type {
 }
 
 .splash p {
+    font-family: "Mulish";
+    line-height: 1.5em;
     font-family: "Mulish";
     font-size: 1.5em;
     color: #4F4F4F;
@@ -284,6 +302,7 @@ nav a:last-of-type {
     color: #C4C4C4;
     letter-spacing: .05;
     margin-bottom: 0;
+    
     
 }
 
