@@ -27,9 +27,10 @@
 
 
 
-html {
-    background-image: url("../../assets/images/background/Dots.svg");
-   
+.bg-dots {
+    background: url("../../assets/images/background/Dots.svg") no-repeat;
+    position: absolute;
+    overflow: hidden;
     
 }
 
