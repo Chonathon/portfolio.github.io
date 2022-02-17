@@ -131,7 +131,7 @@ input[type=text], select, textarea {
 
   @media screen and (max-width: 650px) {
       .tablet {
-          display: none;
+          /* display: none; */
       }
       .mobile {
           display: block;
