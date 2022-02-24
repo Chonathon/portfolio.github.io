@@ -337,10 +337,10 @@ nav a:last-of-type {
     border-radius: 3px;
  }
 
- .thumbnail-container:hover {
+ /* .thumbnail-container:hover {
     transform: translateX(2px) translateY(-2px);
     box-shadow: -2px 2px #309A9A
- }
+ } */
 
 .cs-title-card {
     box-sizing: border-box;
@@ -365,18 +365,28 @@ nav a:last-of-type {
     margin-bottom: 6px;
 }
 
- .thumbnail {
+.thumbnail  {
     
-    width: 100%;
+    width: 101%;
     height: auto;
     object-fit: cover;
     position: relative;
     cursor: pointer;
     display: block;
     overflow: hidden;
-    
-
  }
+
+.thumbnail-container img {
+    transition-duration: 350ms;
+}
+
+ .thumbnail-container:hover img {
+    transform: scale(1.03);
+    transition-duration: 250ms;
+    transition-delay: 100ms;
+ }
+
+
 
 
 footer {
