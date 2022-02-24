@@ -332,6 +332,9 @@ nav a:last-of-type {
     height: auto;
     display: block;
     overflow: hidden;
+    
+    border: 2px solid #309A9A;
+    border-radius: 3px;
  }
 
  .thumbnail-container:hover {
