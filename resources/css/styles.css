@@ -443,7 +443,7 @@ footer a img {
 }
 @media screen and (max-width: 600px) {
     
-    footer {
+    .repo {
         display: none;
     }
     .logo {
@@ -451,17 +451,13 @@ footer a img {
     }
 
     .header-small {
-        justify-content: center;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        background-color: hsl(180, 33%, 70%);
-        height: 3em;
-    }
-
-    .button {
-        margin-right: .5em;
-    }
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        height: 5em;
+        width: 100%;
+        z-index: 999;
+    } 
    
 
     .splash {
@@ -484,6 +480,10 @@ footer a img {
 
     .cs-title-card h2 {
         font-size: 1.25em;
+    }
+
+    .thumbnail-container {
+        margin-bottom: 3em;
     }
 
     .thumbnail-container:hover {
