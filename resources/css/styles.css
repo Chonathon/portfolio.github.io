@@ -226,10 +226,11 @@ nav a:last-of-type {
     height: auto;
     padding: 1em 1em;
     margin-right: 1em;
+    transition: .2s;
+    overflow: visible;
 }
 .external:hover {
-    transform: translateY(1px);
-    
+    transform: translateY(-1px);
 }
 
 .linkedin {
