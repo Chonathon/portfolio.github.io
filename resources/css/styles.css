@@ -1,4 +1,4 @@
-
+/*  */
 /* Global */
 
 
@@ -30,15 +30,13 @@ main {
 }
 
 
-/* Typography */
+/*================================================================
+Typography */
 h1, h2, h3, h4, h5, p {
     line-height: 0;
     margin: 0;
 
 }
-
-
-
 
 a {
     font-family: "Mulish";
@@ -97,6 +95,104 @@ p {
     color: #4F4F4F;
 }
 
+/*================================================================
+Animation*/
+
+/* .slide-in {
+    animation-name: slide-in;
+    animation-duration: 1500ms;
+    transform: translateX(0px);
+    animation-timing-function: cubic-bezier(.795,0,.035,1);
+    transition: all 1500ms cubic-bezier(.795,0,.035,1);
+   
+}  */
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.from-left {
+    animation-name: from-left;
+    animation-duration: 1500ms;
+    animation-timing-function: cubic-bezier(.795,0,.035,1);
+}
+
+@keyframes from-left {
+    from {
+        opacity: 0;
+        transform: translateX(-10vw);
+  
+    }
+
+    to {
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+}
+
+
+.from-top {
+    animation-name: from-top;
+    animation-duration: 1500ms;
+    animation-timing-function: cubic-bezier(.795,0,.035,1);
+}
+
+@keyframes from-top {
+    from {
+        opacity: 0;
+        transform: translateY(-10vw);
+  
+    }
+
+    to {
+        transform: translateY(0vw);
+        opacity: 1;
+    }
+}
+
+.from-right {
+    animation-name: from-right;
+    animation-duration: 1500ms;
+    animation-timing-function: cubic-bezier(.795,0,.035,1);
+}
+
+@keyframes from-right {
+    from {
+        opacity: 0;
+        transform: translateX(10vw);
+  
+    }
+
+    to {
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 1500ms;
+    animation-timing-function: cubic-bezier(.795,0,.035,1);
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+
+  
+    }
+
+    to {
+        opacity: 1;
+    }
+} 
+
 
 
 .accent {
@@ -125,13 +221,13 @@ p {
 }
 
 
-    .header-small {
-        display: none;
-    }
+.header-small {
+    display: none;
+}
 
-    .cs-title-card-mobile {
-        display: none;
-    }
+.cs-title-card-mobile {
+    display: none;
+}
 
 .logo {
     position: absolute;
@@ -180,13 +276,20 @@ nav a:last-of-type {
 }
 
 /* Splash */
-
-.splash {
+header {
+    height: 12em;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 23em;
+    margin-top: 18em;
     margin-bottom: 8em;
+}
+.splash {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .spash > * {
@@ -298,14 +401,13 @@ nav a:last-of-type {
     font-size: 1.5em;
     color: #C4C4C4;
     letter-spacing: .05;
-    margin-bottom: 0;
+    margin-bottom: -4em;
     
     
 }
 
 
-/*---------------------------------------------
-
+/*================================================================
 /* Case studies */
 
 .case-studies {
@@ -421,12 +523,15 @@ footer a img {
      color: #0C2727;
      margin-right: 1em;
  }
-
+/*================================================================
+Tablet*/
 
 @media screen and (max-width: 800px) {
     .header-large {
         display: none;
     }
+
+ 
     .logo {
         top: .5em;
         left: 20px;
@@ -437,14 +542,15 @@ footer a img {
       
     }
 
+    header {
+        margin-top: 5em;
+    }
+
     .splash {
-        margin-top: 16em;
+        
         margin-bottom: 5em;
     }
 
-    .thumbnail-container {
-    }
-    
 
     footer .container {
         flex-direction: column;
@@ -463,6 +569,10 @@ footer a img {
 
 
 }
+
+
+/*================================================================
+Mobile*/
 @media screen and (max-width: 600px) {
     
     .repo {
@@ -483,7 +593,6 @@ footer a img {
    
 
     .splash {
-        margin-top: 8em;
         margin-bottom: 5em;
     }
 
@@ -510,16 +619,6 @@ footer a img {
     .thumbnail-container {
         margin-bottom: 3em;
     }
-
-    .thumbnail-container:hover {
-       transform: none;
-       box-shadow: none;
-     }
-
-    .thumbnail-container:active {
-        /* transform: translateX(2px) translateY(-2px); */
-        box-shadow: none;
-     }
 
 }
 
