@@ -193,7 +193,8 @@ Animation*/
     }
 } 
 
-
+/* =================================================================
+Desktop */
 
 .accent {
     color:#398F8F;
@@ -623,9 +624,13 @@ Mobile*/
 }
 
 @media screen and (max-width: 450px) {
-    .splash {
+    /* .splash {
         margin-top: 5em;
         margin-bottom: 5em;
+    } */
+
+    Header {
+
     }
 
     .splash h1 {
