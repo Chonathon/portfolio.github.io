@@ -1,0 +1,73 @@
+
+
+/*================================================================
+Typography */
+h1, h2, h3, h4, h5, p {
+    line-height: 0;
+    margin: 0;
+
+}
+
+a {
+    font-family: "Mulish";
+    text-decoration: none;
+}
+
+h1 {
+    position:relative;
+    display: inline-block;
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #0C2727;
+    text-transform: uppercase;
+    font-size: 5em;
+    line-height: 1em;
+    letter-spacing: .1em;
+    margin-bottom: .2em;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Raleway";
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.875em;
+    letter-spacing: .25em;
+    line-height: 1em;
+    color: #333;
+}
+
+h3 {
+    font-family: "Mulish";
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    color: #398F8F;
+    font-size: 1em;
+    line-height: 1.5em;
+
+}
+
+h4 {
+    font-family: "Mulish";
+    font-size: 1.5em;
+    color: #398F8F;
+    font-style: italic;
+    font-weight: 600;
+    margin-bottom: .2em;
+    line-height: 1.5em;
+}
+
+p {
+    font-family: "Mulish";
+    font-size: 1.125em;
+    line-height: 1.5em;
+    color: #4F4F4F;
+}
+
+li {
+    font-family: "Mulish";
+    font-size: 1.125em;
+    line-height: 1.5em;
+    color: #4F4F4F;
+}

@@ -6,13 +6,229 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <title>Chivalry II</title>
     <link rel="shortcut icon" type="image/jpg" href="assets/images/Worf 32x32.png"/>
-    <link rel="stylesheet" href="resources/css/styles.css">
+
     <link rel="stylesheet" href="resources/css/background.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Raleway&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="syles.css"> -->
+    <link rel="stylesheet" href="resources/css/typography.css">
+    <link rel="stylesheet" href="resources/css/case-study.css">
+
 </head>
-<body>
+    <body>
+    <!-- =================================================Nav -->
+        <!-- <div class="nav-bg"><img src="assets/images/background/tri-container.svg" alt=""></div>
+        <div class="logo from-left">
+            <a href="index.html"><img src="assets/images/logos/Form and Flow.png" alt="Logo"></a>
+        </div> 
+            <div class="header-large from-right">                  
+            
+                <nav>
+                    <a href="#work" class="button"><strong>Work</strong></a>
+                    <a href="about.html" class="button">About</a>
+                    <a href="mailto:seanrobinsimmons@gmail.com" class="button">Contact</a>
+                    <a href="Resume/Resume-V2-220222.pdf" target="_blank"class="button">Resume</a>
+                </nav>
+            </div>
+        
+            <div class="header-small from-right">                      <div class="logo">
+                <a href="index.html"><img src="assets/images/logos/Form and Flow.png" alt="Logo"></a>
+            </div> 
+                <nav>
+                    <a href="#work" class="button"><strong>Work</strong></a>
+                    <a href="about.html" class="button">About</a>
+                    <a href="mailto:seanrobinsimmons@gmail.com" class="button">Contact</a>
+                    <a href="Resume/Porfolio-V2-220222.pdf" target="_blank"class="button">Resume</a>
+                </nav>
+            </div> -->
+
+
+    <div class="container">
+        
+                <header>
+                    <!-- <h1 class="invisible">Chivalry II Weapon Customization Menu Redesign</h1> -->
+                    <img src="assets/images/chivalry-case-study/Banner.png" alt="Chivalry Casestudy Banner">
+                </header>
+       
+                
+
+                <div class="section">
+                    <div class="content">
+                        <p>Disclaimer: This is a practice project that I’m doing for my own development as a designer. I’m using Chivalry II as source material because I love the game and I want to contribute to the discussion around its updates and improvement. I have no connection to Torn Banner Studios.</p>
+                    </div>
+                </div>
+        
+                <div class="section">
+                 <div class="content">
+                     
+                            <h2>What is Chivalry II?</h2>
+                            <p>
+                            Chivalry II is a medieval-themed hack and slash online multiplayer video game known for blurring the lines between epic and goofy. It’s a uniquely theatrical experience for the player, and it’s downright fun.
+                            The gameplay centers around huge 64-player matches where two opposing teams — the Agatha Knights and the Mason Order, duke it out on the battlefield over a set of objectives.
+                            Since its release, the game’s enjoyed excellent reviews from critics and players alike and was recently awarded PC Gamer’s Best Multiplayer 2022 award.
+                        </p>
+                 </div>
+                </div>
+
+                <div class="section">
+                    <div class="content">
+                        
+                        <h2>Why the redesign?</h2>
+                        <p>
+                            If you don’t feel like reading all this, the ‘Goals’ section of this article sums it up simply.
+                            <br>
+                            <br>
+                            This is a conceptual redesign of Chivalry II’s weapon cosmetics menu — a game state that allows players to view, choose and purchase cosmetics for their in-game weapons. 👺⚔️👾
+                            The redesign was inspired by a Reddit post I made asking the r/Chivalry2 community how they felt about the game’s menus. From the discussion that ensued, I gathered that players had some common pain points associated with the customization game state.
+                            <br>
+                            <br>
+                        
+                            Something that stuck out to me from the thread:</p>
+                    </div>
+               
+
+                    
+                    <div class="content">
+                        <img src="assets/images/chivalry-case-study/reddit_1.png" alt="" class="small_img">
+                    </div>
+        
+
+                    <div class="content">
+                        <p>This is a pain point I share; currently, when the player selects a cosmetic for a particular weapon, it will carry over to each subclass. Subclasses, in the world of Chivalry, are playable variations of a type (or class) of virtual character. When players customize their virtual characters, they’re not only drawing from their own goals for inspiration, but also from that of the virtual characters. James Paul Gee’s discusses this with his theory on projective stance. Each subclass has its own potential to have a unique personality for the player to instantiate in the game, so I think the game would benefit from giving players the ability to customize each one directly.
+                        Another common complaint I see posted by others on the r/Chivalry2 subreddit is that there’s no way to view weapon or class stats and attributes in the main menu — the player needs to actually be in a match.</p>
+                    </div>
     
-</body>
+    
+                    <div class="content"><img src="assets/images/chivalry-case-study/reddit_2.png" alt="" class="small_img"></div>
+        
+                    <div class="content">
+                        <p>This is problematic because when you’re in a match, you’re playing online with others. Your team’s counting on you! So what better place to incorporate this feature in the game menu’s information architecture than in the weapon customization menu?
+                            In addition to addressing these feature requests, I also wanted to explore tweaking the UI to be a bit more intuitive.</p>
+                    </div>
+
+                    <div class="content"><img src="assets/images/chivalry-case-study/reddit_3.png" alt="" class="small_img"></div>
+
+
+                    <div class="content">
+                        <p>You’re not stupid, u/Mnemosense.
+                            <br><br>
+                            The list of weapon-type buttons featured in its current state looks like an accordion menu to me but doesn’t behave like one. On click, all other options will be hidden. Navigating back to the list is a pain because the only way to do so is to target the tiny back button in the lower-left corner. Some consideration of Fitss’s Law might help us here. Also, for being a game state where the player picks cosmetics for their character, there’s a surprising lack of visual preview in the menus. These are just a couple of examples of potential issues that may be contributing to the confusion.
+                            <br><br>
+                            Here’s the game in its current state:</p>
+                    </div>
+
+                    <div class="columns"><img src="assets/images/chivalry-case-study/current_1.png" alt=""><img src="assets/images/chivalry-case-study/current_2.png" alt="">
+                    </div>
+
+
+                   
+
+                    <div class="content">
+                        <p>Let’s sum all this up in a few goals…</p>
+                    </div>
+
+                
+
+                </div>
+<!-- Goals -->
+
+            <div class="section">
+
+                <div class="content">
+
+                    <h2>Goals:</h2>
+                    <ol>
+                        <li>Improve the general player experience and navigability
+                        </li>
+                        <li>Allow players the ability to customize specific subclasses
+                        </li>
+                        <li>Add functionality for viewing weapon and character class stats
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+
+<!-- Solution -->
+            <div class="section">
+
+                <div class="content">
+
+                    <h2>Solution</h2>
+                </div>
+
+                <img class="full_img" src="assets/images/chivalry-case-study/solution_1.png" alt="">
+
+                <div class="content">
+                    <p>Skip the words and <a href="https://www.figma.com/proto/oSgVZFnItfHpjOoUwNRmwF/Chivalry-II-Menu-Redesign?page-id=172%3A1617&node-id=335%3A10691&viewport=366%2C48%2C0.29&scaling=min-zoom&starting-point-node-id=335%3A10691">Jump into the prototype here!</a></p>
+                </div>
+
+                <div class="content">
+                    <h3>Re: Player experience and navigability</h3>
+                    <p>
+                        The accordion menus of yore have been replaced with containers for each weapon category — Primary, Secondary, and Tools — and icons within each container which represent the weapon type with a generalized silhouette. The design borrows heavily from what already exists as a weapon selection menu when the player is in a match. This was done on purpose to keep the new UI consistent with the mental model that’s already been established in the player.
+                        <br><br>
+                        Clicking on the weapon-type will display the cosmetics available for it. In place of the text-based menu system, each cosmetic card will contain an image of the weapon, the weapon’s name, and scarcity level. Having the image of the weapon included with this other information allows players to browse and contemplate at a glance.
+                    </p>
+                </div>
+
+                <div class="content">
+                    <h3>Re: Functionality for viewing weapon and class stats</h3>
+                    <p>A hover state for the weapon-type selection buttons reveals information about the weapon-type’s stats and attributes. With this, players will be able to compare different weapons on their own time, outside of a match. As cosmetics cost either earned tokens or bought digital currency, it’s advantageous for players to be able to have a clear idea of which weapon-types they want to invest their time or money into.</p>
+                </div>
+
+                <div class="content">
+                    <h3>Re: Customization of subclasses
+                    </h3>
+                    <p>Buttons with text accompanied icons representing each subclass have been added to the lower-right side of the screen. The buttons reveal information about each of the subclasses’ stats and attributes on hover and change the selected subclass for customization on click. Maybe the player is envisioning a leather-clad Viking aesthetic **for their Raider subclass, but they want their Ambusher subclass **to **look more like a ninja — that’s now possible.</p>
+                </div>
+
+            </div>
+
+<!-- User Testing and Reception -->
+        <div class="section">
+            <div class="content">
+                <p>To gauge how this design might be received by players of the game, I created a follow-up post on Reddit asking for critique. I also asked that they fill out a questionnaire that asked the participants which system they use to play the game, how they felt about the current state of Chivalry II’s weapon menu (Love it || Hate it; on a scale of 1 to 5), if they felt my prototype was an improvement (Yes || No; on a scale of 1 to 5), and I gave them the opportunity to elaborate if they wish. The survey was completed by 8 participants.</p>
+            </div>
+            <div class="content">
+            
+                <p>The results are as follows:
+                </p>
+                <br><br>
+                <ul>
+                    <li>100% of the participants used a PC to play Chivalry II</li>
+                    <li>75% of the participants gave Chivalry II’s current menu a 2 out of 5; 25% gave it a 3 out of 5</li>
+                    <li>100% of the participants gave the redesign a 5 out of 5</li>
+                </ul>
+            </div>
+       
+        </div>
+
+<!-- Process -->
+        <div class="section">
+            <div class="content">
+                <h2>Process</h2>
+                <h3>Content Audit & Ideation</h3>
+                <p>My process began with grabbing screen captures of the weapon customization menu from Chivalry II, as well as from Chivalry: Medieval Warfare. Chivalry: Medieval Warfare was the first installment in the Chivalry series. I wanted to keep it as a reference to make sure I was well informed in regard to the game’s design lineage.
+                <br><br>
+                These went into Figma for annotation so I could begin throwing around some initial ideas for the redesign. I also used the screen captures of the game’s current state to do a content audit to make sure that every bit of information went into the new designs.</p>
+            </div>
+            
+            
+            <img class="small_img" src="assets/images/chivalry-case-study/process_1.png" alt="">
+
+            
+        
+        
+        
+        </div>
+
+
+
+
+
+    </div>
+
+    </body>
 </html>
