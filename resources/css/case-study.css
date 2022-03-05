@@ -32,7 +32,8 @@ h3 {
 } */
 
 nav {
-    position: absolute;
+   align-self: center;
+   margin: 1em 0;
 }
 
 header {
@@ -40,8 +41,8 @@ header {
     position: relative;
     display: block;
     
-    margin-top: 18em;
-    margin-bottom: 8em;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
 header img {
@@ -65,7 +66,7 @@ header img {
     align-items: center;
     margin-bottom: 1.5em;
     position: relative;
-    width: 100%;
+    max-width: 100%;
 }
 
 .content {
@@ -146,6 +147,10 @@ header img {
 
 
 @media screen and (min-width: 1200px) {
+    nav {
+        align-self: flex-start;
+        margin: 1em 0 5em 70px;
+     }
 
     .section {
         max-width: 800px;
