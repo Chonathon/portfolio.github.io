@@ -36,7 +36,7 @@ header img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1440;
+    /* max-width: 1440px; */
     position: relative;
 }
 
@@ -47,7 +47,7 @@ header img {
     align-items: center;
     margin-bottom: 1.5em;
     position: relative;
-    width: 90%;
+    max-width: 1440px;
 }
 
 .content {
@@ -135,7 +135,7 @@ header img {
     } 
 
     .columns img {
-        width: 50%;
+        width: 1440px;
         margin-right: 2em;
     }
 }
