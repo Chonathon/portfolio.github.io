@@ -90,7 +90,7 @@
 
                     
                     <div class="content">
-                        <img src="assets/images/chivalry-case-study/reddit_1.png" alt="" class="small_img">
+                        <a href="assets/images/chivalry-case-study/reddit_1.png"><img src="assets/images/chivalry-case-study/reddit_1.png" alt="" class="small_img"></a>
                     </div>
         
 
@@ -100,14 +100,18 @@
                     </div>
     
     
-                    <div class="content"><img src="assets/images/chivalry-case-study/reddit_2.png" alt="" class="small_img"></div>
+                    <div class="content">
+                        <a href="assets/images/chivalry-case-study/reddit_2.png"><img src="assets/images/chivalry-case-study/reddit_2.png" alt="" class="small_img"></a>
+                    </div>
         
                     <div class="content">
                         <p>This is problematic because when you’re in a match, you’re playing online with others. Your team’s counting on you! So what better place to incorporate this feature in the game menu’s information architecture than in the weapon customization menu?
                             In addition to addressing these feature requests, I also wanted to explore tweaking the UI to be a bit more intuitive.</p>
                     </div>
 
-                    <div class="content"><img src="assets/images/chivalry-case-study/reddit_3.png" alt="" class="small_img"></div>
+                    <div class="content">
+                        <a href="assets/images/chivalry-case-study/reddit_3.png"><img src="assets/images/chivalry-case-study/reddit_3.png" alt="" class="small_img"></a>
+                    </div>
 
 
                     <div class="content">
@@ -194,6 +198,7 @@
 <!-- User Testing and Reception -->
         <div class="section">
             <div class="content">
+                <h2>User-testing</h2>
                 <p>To gauge how this design might be received by players of the game, I created a follow-up post on Reddit asking for critique. I also asked that they fill out a questionnaire that asked the participants which system they use to play the game, how they felt about the current state of Chivalry II’s weapon menu (Love it || Hate it; on a scale of 1 to 5), if they felt my prototype was an improvement (Yes || No; on a scale of 1 to 5), and I gave them the opportunity to elaborate if they wish. The survey was completed by 8 participants.</p>
             </div>
             <div class="content">
@@ -214,7 +219,9 @@
         <div class="section">
             <div class="content">
                 <h2>Process</h2>
+
                 <h3>Content Audit & Ideation</h3>
+
                 <p>My process began with grabbing screen captures of the weapon customization menu from Chivalry II, as well as from Chivalry: Medieval Warfare. Chivalry: Medieval Warfare was the first installment in the Chivalry series. I wanted to keep it as a reference to make sure I was well informed in regard to the game’s design lineage.
                 <br><br>
                 These went into Figma for annotation so I could begin throwing around some initial ideas for the redesign. I also used the screen captures of the game’s current state to do a content audit to make sure that every bit of information went into the new designs.</p>
@@ -223,12 +230,56 @@
             
             <a href="assets/images/chivalry-case-study/process_1.png"><img class="small_img" src="assets/images/chivalry-case-study/process_1.png" alt=""></a>
 
-            
+            <div class="content">
+                <h3>Wireframing</h3>
+                <p>From the ideation stage of my process, I became fairly certain that borrowing from the in-game weapon selection menu was the right way to go because I saw how that design could easily facilitate the additional information I needed to incorporate, and as stated before, it would be less jarring if recycling it meant it would also be recycling the player’s mental model of the UI.</p>
+            </div>
         
+            <a href="assets/images/chivalry-case-study/process_2.png"><img class="small_img" src="assets/images/chivalry-case-study/process_2.png" alt=""></a>
         
+            <div class="content">
+                <h3>Collecting assets and building components</h3>
+                <p>Once I had a layout and a plan that I was happy with, I began scraping the web for assets that I could use for my design. Originally, I had planned to redo multiple game states, so I ended up with more assets than I needed for the weapon customization menu. 
+                <br><br>
+                Creating the components and variant animations was one of the more time-consuming tasks. I wanted the prototype for the redesign to feel like the real game for user-testing to help eliminate bias.</p>
+            </div>
+        
+            <a href="assets/images/chivalry-case-study/process_3.png"><img class="small_img" src="assets/images/chivalry-case-study/process_3.png" alt=""></a>
+        
+            <div class="content">
+                <h3>High-fidelity & Iteration</h3>
+                <p>Once I had a screen I was comfortable showing off, I sent it off to members of the Chivalry community with who I’m acquaintance with, along with a short blurb, to help them orient themselves with the new design. I decided on a convenience sampling approach here because I wanted to generate critique quickly, and because I wanted to knew that, after I received it I could reliably follow up with questions for further explanation.</p>
+            </div>
+
+            <div class="content">
+                <p>Here’s how the design looked when I initially sent it out:</p>
+            </div>
+
+            <a href="assets/images/chivalry-case-study/process_4.png"><img class="small_img" src="assets/images/chivalry-case-study/process_4.png" alt=""></a>
+
+            <div class="content">
+                <p>Reactions were mostly positive, but the most glaring issue seemed to be the lack of hierarchy intuited by the weapon cosmetic cards. This was caused by a couple of issues in the design.</p>
+            </div>
+
+            <div class="content">
+                <ol>
+                    <li>Despite the measures I had taken to ensure that all the information from the menu’s current state had a new home, I forgot to include the weapon cosmetic categories and their scarcity. This was easily amended with the addition of subtitles in the weapons cosmetics container and another line of test displaying the weapon cosmetic’s scarcity level.</li>
+                    <li>I had included weapon cosmetic cards under a weapon-type that had no business being there. I had a limited number of weapon assets, and I wanted to create the illusion of variety and realism by including as many distinct cosmetics, regardless of whether they fit under the weapon-type.</li>
+                </ol>
+            </div>
+
+            <div class="content">
+                <p>Lesson learned: it’s more important to be clear than pretty. I changed the final prototype to only include the sword asset I had in order to help discourage any judgment of hierarchy, or scarcity, by how the weapon looks in the prototype.</p>
+            </div>
         
         </div>
+        <div class="section">
+            <div class="content">
+                <h2>Reflection</h2>
 
+                <p>Throughout the project, I tried to think hard about what the player response would be if this change were to actually happen. People are opinionated about Chivalry II, in part, because its genre sits in such a niche category, and so there aren’t many alternatives. I’m happy that I chose to work mostly with assets that already existed. Borrowing from designs that already exist elsewhere in the game helped reduce cognitive friction that players may have felt from introducing an overhaul — such as what I propose here — and, as made evident from the user testing, players were able to easily transpose the flow they’ve already learned from the in-game weapon selection menu — mission accomplished!</p>
+            </div>
+        </div>
 
 
 
