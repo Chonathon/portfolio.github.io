@@ -95,7 +95,7 @@ header img {
 
 .columns {
     display: flex;
-    width: 100%;
+    width: 90%;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -131,11 +131,18 @@ header img {
     .columns {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-    } 
+        flex-wrap: wrap;
+        justify-content: space-around;
 
-    .columns img {
-        width: 1440px;
+        max-width: 2000px;
+    } 
+    
+  
+
+    .columns a {
+        width: 45%;
         margin-right: 2em;
     }
+
+
 }
