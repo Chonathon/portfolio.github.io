@@ -29,6 +29,61 @@ main {
     
 }
 
+.button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px 16px 4px 16px;
+    color: #309A9A;
+    background-color: #fff;
+    border: 2px solid #309A9A;
+    border-radius: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: -2px 2px 0 -2px#C3D3D3, -2px 2px 0 #398F8F;
+    z-index: 999;
+}
+
+.button:hover {
+    transform: translateX(-.5px) translateY(.5px);
+    box-shadow: -1.5px 1.5px 0 -2px#C3D3D3, -1.5px 1.5px 0 #398F8F;
+}
+.button:active {
+    transform: translateX(-2px) translateY(2px);
+    box-shadow: none;
+}
+
+.tooltip {
+    position: relative;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px 8px 16px;
+    background-color: #fff;
+    border: 2px dotted #0C2727;
+    color: #0C2727;
+    border-radius: 2px;
+    text-transform: none;
+    width: 200px;
+   
+    position: absolute;
+    z-index: 1;
+    top: 2.5em;
+    left: 0;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    transition-delay: .4s;
+  }
+
+
 
 /*================================================================
 Typography */
@@ -254,41 +309,7 @@ nav a:last-of-type {
     margin-right: 0;
 }
 
-/* .button {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 4px 16px 4px 16px;
-    color: #309A9A;
-    background-color: #fff;
-    border: 2px solid #309A9A;
-    border-radius: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
-    box-shadow: -2px 2px 0 -2px#C3D3D3, -2px 2px 0 #398F8F;
-    z-index: 999;
-} */
-/* .button {
-    display: block;
-    padding: 4px 16px 4px 16px;
-    color: #309A9A;
-    background-color: #fff;
-    border: 2px solid #309A9A;
-    border-radius: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
-    box-shadow: -2px 2px 0 -2px#C3D3D3, -2px 2px 0 #398F8F;
-    z-index: 999;
-} */
 
-.button:hover {
-    transform: translateX(-.5px) translateY(.5px);
-    box-shadow: -1.5px 1.5px 0 -2px#C3D3D3, -1.5px 1.5px 0 #398F8F;
-}
-.button:active {
-    transform: translateX(-2px) translateY(2px);
-    box-shadow: none;
-}
 
 /* Splash */
 header {
