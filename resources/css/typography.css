@@ -37,7 +37,7 @@ h2 {
     color: #333;
 }
 
-h3 {
+/* h3 {
     font-family: "Mulish";
     font-weight: lighter;
     text-transform: uppercase;
@@ -45,6 +45,18 @@ h3 {
     color: #398F8F;
     font-size: 1em;
     line-height: 1.5em;
+
+} */
+
+h3 {
+    font-family: "Mulish";
+    font-weight: 600;
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #398F8F;
+    font-size: 1.125em;
+    margin-bottom: .5em;
 
 }
 
@@ -56,6 +68,15 @@ h4 {
     font-weight: 600;
     margin-bottom: .2em;
     line-height: 1.5em;
+}
+
+h5 {
+    font-family: "Mulish";
+    font-size: 1.25em;
+    line-height: 1.5em;
+    font-weight: 600;
+    font-style: italic;
+    color: #4F4F4F;
 }
 
 p {
