@@ -31,6 +31,10 @@ div h5 {
     margin-bottom: 1em;
 }
 
+h2 {
+
+}
+
 .button .external-cs-2 {
 
        width: 1em;
@@ -176,6 +180,10 @@ header img {
 
 
 @media screen and (min-width: 1200px) {
+    html {
+        font-size: 24px;
+      }
+
     nav {
         align-self: flex-start;
         margin: 1em 0 5em 70px;
