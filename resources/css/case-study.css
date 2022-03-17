@@ -57,7 +57,7 @@ h2 {
 
 nav {
    align-self: center;
-   margin: 1em 0;
+   margin: -3em 0;
 }
 
 header {
@@ -188,7 +188,7 @@ header img {
 
     nav {
         align-self: flex-start;
-        margin: 1em 0 5em 70px;
+        margin: -3em 0 5em 70px;
      }
 
     .section {
