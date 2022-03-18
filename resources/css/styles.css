@@ -86,7 +86,7 @@ main {
 
 /*================================================================
 Typography */
-h1, h2, h3, h4, h5, p {
+/* h1, h2, h3, h4, h5, p {
     line-height: 0;
     margin: 0;
 
@@ -129,7 +129,6 @@ h3 {
     color: #398F8F;
     font-size: 1em;
     line-height: 1.5em;
-
 }
 
 h4 {
@@ -147,7 +146,7 @@ p {
     font-size: 1.125em;
     line-height: 1.5em;
     color: #4F4F4F;
-}
+} */
 
 /*================================================================
 Animation*/
@@ -481,6 +480,42 @@ header {
     box-shadow: -2px 2px #309A9A
  } */
 
+ .thumbnail {
+     width: 101%;
+     height: auto;
+     object-fit: cover;
+     position: relative;
+     cursor: pointer;
+     display: block;
+     overflow: hidden;
+  }
+ 
+  .thumbnail-container {
+      position: relative;
+  }
+ 
+ .thumbnail-container img {
+     transition-duration: 350ms;
+ }
+ 
+ .thumbnail-container:hover img {
+    transform: scale(1.03);
+    transition-duration: 250ms;
+    transition-delay: 100ms;
+ }
+ 
+ .external-cs {
+     position: absolute;
+     top: 1.5em;
+     right: 2em;
+     z-index: 999;
+     /* background: url("../../assets/images/icons/external_link.png"); */
+     object-fit: contain;
+     object-position: center;
+     width: 1.5em;
+     height: auto;
+ }
+
 .cs-title-card {
     box-sizing: border-box;
     position: absolute;
@@ -492,9 +527,9 @@ header {
     flex-direction: column;
     justify-content: space-around;
     background-color: #F2F2F2;
-    border: 1px solid #716D6D;
-    border-radius: 1px;
-    box-shadow: -2px 2px 0 #716D6D;
+    border: 2px solid #716D6D;
+    border-radius: 3px;
+    /* box-shadow: -2px 2px 0 #716D6D; */
     padding: 1em 2em .875em 2em;
 }
 
@@ -503,42 +538,28 @@ header {
     margin-bottom: 6px;
 }
 
-.thumbnail {
-    width: 101%;
-    height: auto;
-    object-fit: cover;
-    position: relative;
-    cursor: pointer;
-    display: block;
-    overflow: hidden;
- }
 
- .thumbnail-container {
-     position: relative;
- }
+.tags {
+    display: flex;
+    justify-content: flex-start;
 
-.thumbnail-container img {
-    transition-duration: 350ms;
 }
 
-.external-cs {
-    position: absolute;
-    top: 1.5em;
-    right: 2em;
-    z-index: 999;
-    /* background: url("../../assets/images/icons/external_link.png"); */
-    object-fit: contain;
-    object-position: center;
-    width: 1.5em;
-    height: auto;
+span.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 4px 1px 4px;
+    margin-right: .5em;
+
+    font-family: "Mulish";
+    font-size: 1em;
+    color: #4F4F4F;
+    background-color: #F5FAFA;
+
+    border: 1px solid #716D6D;
+    border-radius: 3px;
 }
-
-
- .thumbnail-container:hover img {
-    transform: scale(1.03);
-    transition-duration: 250ms;
-    transition-delay: 100ms;
- }
 
 
 
