@@ -1,4 +1,7 @@
 
+html {
+        font-size: 20px;
+      }
 
 
 h2 {
@@ -29,8 +32,8 @@ h4 {
 }
 
 p {
-    font-size: 1.125em;
-    margin-bottom: .5em;
+    /* font-size: 1.125em; */
+    /* margin-bottom: .5em; */
 }
 
 a {
@@ -107,7 +110,9 @@ input[type=text], select, textarea {
 .mobile{
     display: none;
 }
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 900px){
+
+
       .desktop {
           display: none;
       }
@@ -120,8 +125,17 @@ input[type=text], select, textarea {
           display: none;
       }
 
+      .wrapper-sub-page {
+          max-width: 90%;
+      }
+
       .intro {
           margin-bottom: 1em;
+          /* flex-direction: column-reverse; */
+      }
+
+      .headshot {
+          margin-bottom: 2em;
       }
 
       .headshot img {
@@ -136,6 +150,11 @@ input[type=text], select, textarea {
       .mobile {
           display: block;
       }
+
+      .intro {
+        margin-bottom: 1em;
+        flex-direction: column-reverse;
+    }
 
  
   }
