@@ -81,13 +81,22 @@ header img {
     position: relative;
 }
 
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #F5FAFA;
+}
+
+
 .section {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 3em;
     position: relative;
-    max-width: 800px;
+    /* max-width: 800px; */
 }
 
 .content {
@@ -170,7 +179,6 @@ header img {
 
 
 
-
 .invisible {
     display: none;
 }
@@ -190,11 +198,11 @@ header img {
      }
 
     .section {
-        width: 800px;
+        width: 100%;
     }
 
     .content {
-        width: 100%;
+        max-width: 800px;
     }
 
     .columns {

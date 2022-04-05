@@ -554,10 +554,11 @@ span.tag {
 
     font-family: "Mulish";
     font-size: 1em;
+    font-weight: 600;
     color: #4F4F4F;
     background-color: #F5FAFA;
 
-    border: 1px solid #716D6D;
+    border: 2px solid #716D6D;
     border-radius: 3px;
 }
 
