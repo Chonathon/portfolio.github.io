@@ -33,6 +33,9 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
+    font-size: 16px;
+
     padding: 4px 16px 4px 16px;
     color: #309A9A;
     background-color: #fff;
@@ -40,14 +43,15 @@ main {
     border-radius: 2px;
     text-transform: uppercase;
     text-decoration: none;
-    box-shadow: -2px 2px 0 -2px#C3D3D3, -2px 2px 0 #398F8F;
+    box-shadow: -2px 2px 0 -2px #C3D3D3, -2px 2px 0 #398F8F;
     z-index: 999;
 }
 
 .button:hover {
     transform: translateX(-.5px) translateY(.5px);
-    box-shadow: -1.5px 1.5px 0 -2px#C3D3D3, -1.5px 1.5px 0 #398F8F;
+    box-shadow: -1.5px 1.5px 0 -2px #C3D3D3, -1.5px 1.5px 0 #398F8F;
 }
+
 .button:active {
     transform: translateX(-2px) translateY(2px);
     box-shadow: none;
@@ -83,82 +87,10 @@ main {
   }
 
 
-
-/*================================================================
-Typography */
-/* h1, h2, h3, h4, h5, p {
-    line-height: 0;
-    margin: 0;
-
-}
-
-a {
-    font-family: "Mulish";
-    text-decoration: none;
-}
-
-h1 {
-    position:relative;
-    display: inline-block;
-    font-family: "Raleway";
-    font-weight: 300;
-    color: #0C2727;
-    text-transform: uppercase;
-    font-size: 5em;
-    line-height: 1em;
-    letter-spacing: .1em;
-    margin-bottom: .2em;
-    text-align: center;
-}
-
-h2 {
-    font-family: "Raleway";
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.875em;
-    letter-spacing: .25em;
-    line-height: 1em;
-    color: #333;
-}
-
-h3 {
-    font-family: "Mulish";
-    font-weight: lighter;
-    text-transform: uppercase;
-    letter-spacing: .25em;
-    color: #398F8F;
-    font-size: 1em;
-    line-height: 1.5em;
-}
-
-h4 {
-    font-family: "Mulish";
-    font-size: 1.5em;
-    color: #398F8F;
-    font-style: italic;
-    font-weight: 600;
-    margin-bottom: .2em;
-    line-height: 1.5em;
-}
-
-p {
-    font-family: "Mulish";
-    font-size: 1.125em;
-    line-height: 1.5em;
-    color: #4F4F4F;
-} */
-
 /*================================================================
 Animation*/
 
-/* .slide-in {
-    animation-name: slide-in;
-    animation-duration: 1500ms;
-    transform: translateX(0px);
-    animation-timing-function: cubic-bezier(.795,0,.035,1);
-    transition: all 1500ms cubic-bezier(.795,0,.035,1);
-   
-}  */
+
 
 @keyframes slide-in {
     from {
@@ -549,7 +481,7 @@ span.tag {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1px 4px 1px 4px;
+    padding: 1px 4px 2px 4px;
     margin-right: .5em;
 
     font-family: "Mulish";
@@ -558,7 +490,7 @@ span.tag {
     color: #4F4F4F;
     background-color: #F5FAFA;
 
-    border: 2px solid #716D6D;
+    border: 2px solid #4F4F4F;
     border-radius: 3px;
 }
 
