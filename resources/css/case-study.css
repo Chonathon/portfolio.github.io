@@ -11,6 +11,11 @@ html {
     /* font-size: 18px; */
   }
   
+  
+/* TODO: 
+- get ride of blue sections
+- fix margins*/
+
 
 body {
     font-family: Arial;
@@ -55,6 +60,7 @@ h2 {
 } */
 
 nav {
+   
    align-self: center;
    margin: -3em 0 0 0;
 }
@@ -72,6 +78,47 @@ header img {
     object-fit: contain;
     object-position: center;
     width: 100%;
+}
+
+.column {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+
+
+}
+
+.left_column {
+    width: 25%;
+
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.right_column {
+    width: 75%;
+}
+
+.table_of_contents {
+    top: 2em;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+
+}
+
+.table_of_contents > a {
+    display: block;
+    margin-bottom: .5em;
+
+    font-size: 1.25em;
+
+    color: #333;
 }
 
 .container {
