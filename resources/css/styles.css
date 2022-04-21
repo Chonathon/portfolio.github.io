@@ -5,6 +5,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-size: 20px;
   }
   *,
   *:before,
@@ -573,28 +574,91 @@ Tablet*/
     }
 
 
+
 }
 
 
 /*================================================================
 Mobile*/
 @media screen and (max-width: 600px) {
+
+    .nav {
+        position: absolute;
+        z-index: 999;
+        top: 80px;
+        right: -100%;
+        width: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 24px;
+
+        background-color: #fff;
+        border: 2px solid #309A9A;
+        border-radius: 4px;
+
+        transition: 0.3s;
     
+    }
+    
+    nav > a {
+        margin-right: 0em;
+        margin-bottom: 24px;
+    }
+    
+    nav a:last-of-type {
+        margin-right: none;
+        margin-bottom: 0;
+    }
+
+    nav.active {
+        right: 35px;
+        
+    }
+
     .repo {
         display: none;
     }
     .logo {
-        display: none;
+        /* display: none; */
     }
 
     .header-small {
-        justify-content: space-around;
-        padding: 0;
+        justify-content: flex-end;
+        /* padding: 0; */
         margin: 0;
         height: 5em;
         width: 100%;
         z-index: 999;
     } 
+
+    .hamburger {
+        cursor: pointer;
+    }
+    
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.15s ease-in-out;
+        transition: all 0.15s ease-in-out;
+        background-color: #309A9A;
+    }
+    
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
    
 
     .splash {
@@ -632,10 +696,6 @@ Mobile*/
         margin-top: 5em;
         margin-bottom: 5em;
     } */
-
-    Header {
-
-    }
 
     .splash h1 {
         font-size: 3em;
